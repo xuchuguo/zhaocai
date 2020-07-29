@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Money from '@/views/Money.vue'
 import Labels from '@/views/Labels.vue'
-import Tongji from '@/views/Tongji.vue'
+import Statistics from '@/views/Statistics.vue'
 
 Vue.use(VueRouter)
 
@@ -22,9 +22,9 @@ const routes: Array<RouteConfig> = [
     component: Labels
   },
   {
-    path: '/tongji',
-    name: 'Tongji',
-    component: Tongji
+    path: '/statistics',
+    name: 'Statistics',
+    component: Statistics
   }
 ]
 
