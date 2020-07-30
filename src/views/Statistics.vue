@@ -1,8 +1,5 @@
 <template>
-  <div>
-    xxx
-    <Nav></Nav>
-  </div>
+  <Layout>xxxxx</Layout>
 </template>
 
 <script>

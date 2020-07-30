@@ -1,8 +1,5 @@
 <template>
-  <div>
-    x
-    <Nav></Nav>
-  </div>
+  <Layout>lab</Layout>
 </template>
 
 <script>
