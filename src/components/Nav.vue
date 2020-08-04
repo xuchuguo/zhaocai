@@ -1,14 +1,14 @@
 <template>
   <div class="nav">
-    <router-link class="item" to="/money">
+    <router-link class="item" to="/money" active-class="selected">
       <Icon name = 'money'></Icon>
       记账
     </router-link>
-    <router-link class="item" to="/labels">
+    <router-link class="item" to="/labels"  active-class="selected">
       <Icon name = 'label'></Icon>
       标签
     </router-link>
-    <router-link class="item" to="/statistics">
+    <router-link class="item" to="/statistics"  active-class="selected">
        <Icon name = 'tongji'></Icon>
       统计
     </router-link>
@@ -20,6 +20,14 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@keyframes on {
+  from{
+   transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
 .nav {
   font-size: 12px;
   display: flex;
@@ -35,6 +43,12 @@ export default {};
       width: 32px;
       height: 32px;
     }
+  }
+  > .item.selected {
+    color: red;
+  }
+  > .item:first-child.selected .icon{
+     animation: on .7s linear
   }
 }
 </style>
